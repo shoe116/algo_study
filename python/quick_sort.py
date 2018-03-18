@@ -1,6 +1,6 @@
 # coding: utf-8
-
 from base_sort import BaseSort
+
 
 class QuickSort(BaseSort):
   @classmethod
