@@ -9,9 +9,7 @@ class HeapSort(BaseSort):
 
     i = len(array) - 1
     while i >= 0:
-      tmp = array[i]
-      array[i] = array[0]
-      array[0] = tmp
+      array[i], array[0] = array[0], array[i]
       cls.heapify(array, 0, i)
       i -= 1
 
@@ -36,9 +34,7 @@ class HeapSort(BaseSort):
       largest_id = right_node_id
 
     if start != largest_id: ## if largest is updated
-      tmp = array[largest_id]
-      array[largest_id] = array[start]
-      array[start] = tmp
+      array[largest_id], array[start] = array[start], array[largest_id]
       cls.heapify(array, largest_id, end)
 
 
