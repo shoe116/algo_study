@@ -9,7 +9,7 @@ class MergeSort(BaseSort):
 
   @classmethod
   def marge_sort(cls, target_array, result_array, start, end):
-    if start == end:
+    if start >= end:
       return
     elif end - start == 1:
       if result_array[start] > result_array[end]:
