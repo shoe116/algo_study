@@ -32,10 +32,10 @@ class MergeSort(BaseSort):
         else:
           result_array[index] = target_array[large_index]
           large_index += 1
-      elif small_index == mid and large_index < end:
+      elif large_index < end:
         result_array[index] = target_array[large_index]
         large_index += 1
-      elif large_index == end and small_index < mid:
+      elif small_index < mid:
         result_array[index] = target_array[small_index]
         small_index += 1
       else:
