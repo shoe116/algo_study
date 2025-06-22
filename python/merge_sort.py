@@ -20,7 +20,7 @@ class MergeSort(BaseSort):
       cls.marge_sort(result_array, target_array, start, mid)
       cls.marge_sort(result_array, target_array, mid, end)
 
-    ## marge
+    ## merge
     small_index = start
     large_index = mid
     index = start
