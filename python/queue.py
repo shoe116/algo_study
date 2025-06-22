@@ -26,6 +26,8 @@ class Queue(object):
     else:
       node = self.top
       self.top = self.top.next
+      if self.top is None:
+        self.last = None
       return node.value
 
 
